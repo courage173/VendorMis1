@@ -7,10 +7,11 @@ namespace VendorMis.Models
 {
     public class DocumentUpload
     {
+        //table
         public int DocumentUploadId { get; set; }
         public int VendorId { get; set; }
-        public String Document { get; set; }
-        public String Creator { get; set; }
+        public string Document { get; set; }
+        public string Creator { get; set; }
         public DateTime CreatedDate { get; set; }
     }
 }
