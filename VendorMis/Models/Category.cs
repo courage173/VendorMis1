@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace VendorMIS.Models
+namespace VendorMis.Models
 {
     public class Category
     {

@@ -13,5 +13,6 @@ namespace VendorMis.Models
         public string Document { get; set; }
         public string Creator { get; set; }
         public DateTime CreatedDate { get; set; }
+        public virtual Vendor Vendors { get; set; }
     }
 }

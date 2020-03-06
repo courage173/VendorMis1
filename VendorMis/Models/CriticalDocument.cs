@@ -11,5 +11,6 @@ namespace VendorMis.Models
         public int VendorId { get; set; }
         public string Document { get; set; }
         public int  Score { get; set; }
+        public virtual Vendor Vendors { get; set; }
     }
 }
