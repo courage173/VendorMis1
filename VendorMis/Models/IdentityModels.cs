@@ -29,5 +29,13 @@ namespace VendorMis.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<VendorMis.Models.Category> Categories { get; set; }
+
+        public System.Data.Entity.DbSet<VendorMis.Models.CriticalDocument> CriticalDocuments { get; set; }
+
+        public System.Data.Entity.DbSet<VendorMis.Models.Vendor> Vendors { get; set; }
+
+        public System.Data.Entity.DbSet<VendorMis.Models.DocumentUpload> DocumentUploads { get; set; }
     }
 }

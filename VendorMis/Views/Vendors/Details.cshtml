@@ -1,0 +1,162 @@
+﻿@model VendorMis.Models.Vendor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vendor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Categorys.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categorys.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VendorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VendorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Website)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Website)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactPerson)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactPerson)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactPersonNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactPersonNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactPersonEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactPersonEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassOfBusiness)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassOfBusiness)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CACRegNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CACRegNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearOfRegistration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearOfRegistration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeamNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeamNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LineOfBusiness)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LineOfBusiness)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.keyStrength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.keyStrength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdentifiedKeyWeakeness)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdentifiedKeyWeakeness)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Score)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VendorId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

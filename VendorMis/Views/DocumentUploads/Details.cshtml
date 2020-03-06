@@ -1,0 +1,50 @@
+﻿@model VendorMis.Models.DocumentUpload
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DocumentUpload</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Vendors.VendorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vendors.VendorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Document)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Document)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Creator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Creator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DocumentUploadId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

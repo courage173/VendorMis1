@@ -1,0 +1,42 @@
+﻿@model VendorMis.Models.CriticalDocument
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CriticalDocument</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Vendors.VendorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vendors.VendorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Document)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Document)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Score)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Score)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CriticalDocumentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
