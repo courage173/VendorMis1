@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,6 +9,7 @@ namespace VendorMis.Models
     public class Vendor
     {
         public int VendorId { get; set; }
+        [Display(Name = "Category")]
         public int CategoryId { get; set; }
         public string VendorName { get; set; }
         public string PhoneNumber { get; set; }
@@ -26,6 +28,8 @@ namespace VendorMis.Models
         public string IdentifiedKeyWeakeness { get; set; }
         public string Remarks { get; set; }
         public int Score { get; set; }
+        public string Creator { get; set; }
+        public DateTime CreatedDate { get; set; }
         public virtual Category Categorys { get; set; }
 }
 }

@@ -48,7 +48,7 @@ namespace VendorMis.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "VendorId,CategoryId,VendorName,PhoneNumber,Email,Website,Address,ContactPerson,ContactPersonNumber,ContactPersonEmail,ClassOfBusiness,CACRegNumber,YearOfRegistration,TeamNo,LineOfBusiness,keyStrength,IdentifiedKeyWeakeness,Remarks,Score")] Vendor vendor)
+        public ActionResult Create([Bind(Include = "VendorId,CategoryId,VendorName,PhoneNumber,Email,Website,Address,ContactPerson,ContactPersonNumber,ContactPersonEmail,ClassOfBusiness,CACRegNumber,YearOfRegistration,TeamNo,LineOfBusiness,keyStrength,IdentifiedKeyWeakeness,Remarks,Score,Creator,CreatedDate")] Vendor vendor)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace VendorMis.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "VendorId,CategoryId,VendorName,PhoneNumber,Email,Website,Address,ContactPerson,ContactPersonNumber,ContactPersonEmail,ClassOfBusiness,CACRegNumber,YearOfRegistration,TeamNo,LineOfBusiness,keyStrength,IdentifiedKeyWeakeness,Remarks,Score")] Vendor vendor)
+        public ActionResult Edit([Bind(Include = "VendorId,CategoryId,VendorName,PhoneNumber,Email,Website,Address,ContactPerson,ContactPersonNumber,ContactPersonEmail,ClassOfBusiness,CACRegNumber,YearOfRegistration,TeamNo,LineOfBusiness,keyStrength,IdentifiedKeyWeakeness,Remarks,Score,Creator,CreatedDate")] Vendor vendor)
         {
             if (ModelState.IsValid)
             {
