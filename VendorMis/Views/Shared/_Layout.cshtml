@@ -70,7 +70,8 @@
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a href="@Url.Action("index", "Vendors" )"></a><i class="metismenu-icon pe-7s-display1"></i>
+                                <a href="@Url.Action("index", "Vendors" )"></a>
+                                <i class="metismenu-icon pe-7s-display1"></i>
                                 Vendor
                                 <a href="@Url.Action("index", "Categories" )">
                                     <i class="metismenu-icon pe-7s-display1"></i>
@@ -136,9 +137,9 @@
                 <div class="container body-content">
                     @RenderBody()
                     <hr />
-                    <footer>
+                    @*<footer>
                         <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-                    </footer>
+                    </footer>*@
                 </div>
             </main>
 
@@ -162,7 +163,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script src="~/Scripts/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="assets/demo/chart-area-demo.js"></script>
     <script src="assets/demo/chart-bar-demo.js"></script>
