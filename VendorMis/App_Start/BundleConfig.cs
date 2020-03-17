@@ -9,9 +9,10 @@ namespace VendorMis
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                         "~/Content/assets/scripts/main.js"
+                        "~/Scripts/scripts.js"));
+                         //"~/Content/assets/scripts/main.js"
                          //"~/Scripts/jquery-{version}.js"
-                         ));
+                         //));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -28,7 +29,7 @@ namespace VendorMis
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
 
-                      "~/Content/main.css"
+                      "~/Content/styles.css"
 
                       //"~/Content/bootstrap.css",
                       //"~/Content/site.css"
